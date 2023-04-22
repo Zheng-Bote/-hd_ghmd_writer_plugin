@@ -5,6 +5,8 @@
 #include <QtPlugin>
 #include <QDebug>
 #include <QString>
+#include <QFile>
+#include <QTextStream>
 
 #include "rz_header_docu_plugins.h"
 
