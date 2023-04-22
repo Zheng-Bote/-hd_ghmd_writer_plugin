@@ -36,7 +36,6 @@
 
 **Github Markdown writer plugin for header_docu_qt (e.g. \*.c[pp], \*.h[pp], ...)**
 
-:arrow_right: <mark>:warning: still under construction :warning:</mark> :arrow_left:
 
 *short description:*
 
