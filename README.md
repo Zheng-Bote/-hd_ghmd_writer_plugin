@@ -1,7 +1,7 @@
 <div id="top"></div>
 <br />
 <div align="center">
-<h2 align="center">hd_ghmd_writer_pluginn</h2>
+<h2 align="center">hd_ghmd_writer_plugin</h2>
 
   <p align="center">
       Github Markdown writer plugin for header_docu_qt
