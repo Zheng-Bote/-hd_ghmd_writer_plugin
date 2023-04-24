@@ -3,7 +3,7 @@
  * @author ZHENG Robert (www.robert.hase-zheng.net)
  * @brief Github markdown writer plugin for header_docu
  * @details write Github Markdown header
- * @version 0.1.0
+ * @version 1.0.0
  * @date 2023-04-22
  *
  * @copyright Copyright (c) ZHENG Robert 2023
@@ -14,17 +14,17 @@
 
 const QString PLUGIN_SHORTNAME = "gh_markdown";
 const QString PLUGIN_NAME ="Github Markdown writer";
-const QString PLUGIN_VERSION = "0.1.0";
+const QString PLUGIN_VERSION = "1.0.0";
 
 Hd_ghmd_writer_plugin::Hd_ghmd_writer_plugin(QObject *parent)
 {
     Q_UNUSED(parent);
-    qInfo() << "Plugin Constructor";
+    qDebug() << "Plugin Constructor";
 }
 
 Hd_ghmd_writer_plugin::~Hd_ghmd_writer_plugin()
 {
-    qInfo() << "Plugin Deconstructed";
+    qDebug() << "Plugin Deconstructed";
 }
 
 void Hd_ghmd_writer_plugin::test(QString name)
@@ -50,7 +50,6 @@ void Hd_ghmd_writer_plugin::parseFile(QMap<QString, QString> &mapParseKeys, QStr
 void Hd_ghmd_writer_plugin::writeFile(QMap<QString, QString> mapParseKeys, QMap<QString, QString> mapFileAttribs, QString pathToFile)
 {
     QFile file(pathToFile);
-
     if(! file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         qWarning() << "Cannot open file: " << file.fileName() << "\n" << file.errorString();
         exit(1);
