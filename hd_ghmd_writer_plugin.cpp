@@ -3,8 +3,8 @@
  * @author ZHENG Robert (www.robert.hase-zheng.net)
  * @brief Github markdown writer plugin for header_docu
  * @details write Github Markdown header
- * @version 1.0.0
- * @date 2023-04-22
+ * @version 1.1.0
+ * @date 2023-04-25
  *
  * @copyright Copyright (c) ZHENG Robert 2023
  *
@@ -14,22 +14,22 @@
 
 const QString PLUGIN_SHORTNAME = "gh_markdown";
 const QString PLUGIN_NAME ="Github Markdown writer";
-const QString PLUGIN_VERSION = "1.0.0";
+const QString PLUGIN_VERSION = "1.1.0";
 
 Hd_ghmd_writer_plugin::Hd_ghmd_writer_plugin(QObject *parent)
 {
     Q_UNUSED(parent);
-    qDebug() << "Plugin Constructor";
+    //qDebug() << "Plugin Constructor";
 }
 
 Hd_ghmd_writer_plugin::~Hd_ghmd_writer_plugin()
 {
-    qDebug() << "Plugin Deconstructed";
+    //qDebug() << "Plugin Deconstructed";
 }
 
 void Hd_ghmd_writer_plugin::test(QString name)
 {
-    qInfo() << "Test from Plugin: " << PLUGIN_SHORTNAME << ": " << name;
+    qInfo() << "Test from " << PLUGIN_SHORTNAME << " Plugin: " << name;
 }
 
 QString Hd_ghmd_writer_plugin::getName()
